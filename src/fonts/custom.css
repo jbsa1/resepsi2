@@ -1,0 +1,17 @@
+/* Manstein Font - Local Font Import */
+@font-face {
+  font-family: 'Manstein';
+  src: url('../assets/fonts/Manstein.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* MonthGlade Font - Local Font Import */
+@font-face {
+  font-family: 'MonthGlade';
+  src: url('../assets/fonts/MonthGlade.otf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}

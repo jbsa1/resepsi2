@@ -1,0 +1,392 @@
+.best-wishes-section {
+  padding: 80px 20px;
+  background: linear-gradient(135deg, #f8f4f0 0%, #faf6f0 100%);
+  text-align: center;
+}
+
+.wishes-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.wishes-title {
+  font-family: 'Manstein', serif;
+  font-size: 3rem;
+  color: #8b7355;
+  margin-bottom: 1rem;
+  font-weight: 300;
+}
+
+.wishes-subtitle {
+  font-family: "Crimson Pro";
+  font-size: 1.1rem;
+  color: #6b5d54;
+  margin-bottom: 3rem;
+  line-height: 1.6;
+}
+
+.wishes-content {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.wishes-form {
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 20px;
+  padding: 40px;
+  box-shadow: 0 10px 40px rgba(139, 115, 85, 0.1);
+  text-align: left;
+}
+
+.wish-form .form-group {
+  margin-bottom: 25px;
+}
+
+.wish-form label {
+  display: block;
+  font-family: "Crimson Pro";
+  font-size: 1rem;
+  color: #8b7355;
+  margin-bottom: 8px;
+  font-weight: 600;
+}
+
+.wish-form input,
+.wish-form textarea {
+  width: 100%;
+  padding: 12px 16px;
+  border: 2px solid #e8dcc6;
+  border-radius: 10px;
+  font-family: "Crimson Pro";
+  font-size: 1rem;
+  color: #333;
+  background: #faf6f0;
+  transition: all 0.3s ease;
+  box-sizing: border-box;
+}
+
+.wish-form input:focus,
+.wish-form textarea:focus {
+  outline: none;
+  border-color: #d4af37;
+  background: white;
+  box-shadow: 0 0 0 4px rgba(212, 175, 55, 0.1);
+}
+
+.wish-form input::placeholder,
+.wish-form textarea::placeholder {
+  color: #a09080;
+}
+
+.submit-wish-button {
+  background: linear-gradient(135deg, #d4af37 0%, #f9e4b7 100%);
+  border: none;
+  color: white;
+  padding: 14px 32px;
+  border-radius: 25px;
+  cursor: pointer;
+  font-family: "Crimson Pro";
+  font-size: 1.1rem;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(212, 175, 55, 0.2);
+  width: 100%;
+}
+
+.submit-wish-button:hover:not(:disabled) {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(212, 175, 55, 0.3);
+}
+
+.submit-wish-button:active:not(:disabled) {
+  transform: translateY(0);
+}
+
+.submit-wish-button:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
+.submit-message {
+  margin-top: 15px;
+  padding: 12px 16px;
+  border-radius: 10px;
+  font-family: "Crimson Pro";
+  font-size: 0.95rem;
+  font-weight: 500;
+}
+
+.submit-message.success {
+  background: #d4edda;
+  color: #155724;
+  border: 1px solid #c3e6cb;
+}
+
+.submit-message.error {
+  background: #f8d7da;
+  color: #721c24;
+  border: 1px solid #f5c6cb;
+}
+
+.wishes-display {
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 20px;
+  padding: 40px;
+  box-shadow: 0 10px 40px rgba(139, 115, 85, 0.1);
+  text-align: left;
+  max-height: 500px;
+  overflow-y: auto;
+}
+
+.wishes-display-title {
+  font-family: 'Manstein', serif;
+  font-size: 1.8rem;
+  color: #8b7355;
+  margin-bottom: 25px;
+  font-weight: 300;
+}
+
+.wishes-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.wishes-slider-container {
+  position: relative;
+  min-height: 180px;
+  user-select: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 40px;
+}
+
+.wishes-slider-container:active {
+  cursor: grabbing;
+}
+
+.swipe-indicators {
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.swipe-hint {
+  font-family: "Crimson Pro";
+  font-size: 0.8rem;
+  color: #8b7355;
+  opacity: 0.8;
+}
+
+.dots-container {
+  display: flex;
+  gap: 8px;
+}
+
+.dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: #e8dcc6;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.dot.active {
+  background: #d4af37;
+  transform: scale(1.2);
+}
+
+.more-dots {
+  color: #a09080;
+  font-size: 0.9rem;
+  padding: 0 5px;
+}
+
+.swipe-navigation {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  pointer-events: none;
+}
+
+.nav-button {
+  background: rgba(212, 175, 55, 0.9);
+  border: none;
+  color: white;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+  pointer-events: all;
+  box-shadow: 0 2px 10px rgba(212, 175, 55, 0.3);
+  z-index: 10;
+}
+
+.nav-button:hover:not(:disabled) {
+  background: rgba(212, 175, 55, 1);
+  transform: scale(1.1);
+}
+
+.nav-button:disabled {
+  background: rgba(160, 144, 128, 0.5);
+  cursor: not-allowed;
+  opacity: 0.5;
+}
+
+.nav-button.prev {
+  left: 0;
+}
+
+.nav-button.next {
+  right: 0;
+}
+
+.no-wishes {
+  text-align: center;
+  padding: 40px 20px;
+  color: #a09080;
+  font-family: "Crimson Pro";
+  font-size: 1.1rem;
+}
+
+.loading-wishes {
+  text-align: center;
+  padding: 40px 20px;
+  color: #8b7355;
+  font-family: "Crimson Pro";
+  font-size: 1.1rem;
+  font-style: italic;
+}
+
+.wish-card {
+  background: linear-gradient(135deg, #ffffff 0%, #f8f4f0 100%);
+  border: 1px solid #e8dcc6;
+  border-radius: 15px;
+  padding: 15px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  width: 100%;
+  max-width: 90%;
+  margin: 0 auto;
+}
+
+.wish-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 25px rgba(139, 115, 85, 0.12);
+}
+
+.wish-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.wish-author {
+  font-family: "Crimson Pro";
+  font-size: 1rem;
+  color: #8b7355;
+  font-weight: 600;
+  margin: 0;
+}
+
+.wish-date {
+  font-family: "Manstein";
+  font-size: 0.75rem;
+  color: #6b5d54;
+}
+
+.wish-text {
+  font-family: "Crimson Pro";
+  text-align: left;
+  color: #6b5d54;
+  line-height: 1.5;
+  margin: 0;
+  font-size: 0.95rem;
+}
+
+/* Custom scrollbar for wishes display */
+.wishes-display::-webkit-scrollbar {
+  width: 8px;
+}
+
+.wishes-display::-webkit-scrollbar-track {
+  background: #f8f4f0;
+  border-radius: 10px;
+}
+
+.wishes-display::-webkit-scrollbar-thumb {
+  background: linear-gradient(135deg, #d4af37 0%, #f9e4b7 100%);
+  border-radius: 10px;
+}
+
+.wishes-display::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(135deg, #c4a027 0%, #e9d4a7 100%);
+}
+
+@media (max-width: 968px) {
+  .wishes-content {
+     display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  gap: 40px;
+
+  }
+
+  .wishes-display {
+    max-height: 400px;
+  }
+}
+
+@media (max-width: 768px) {
+  .best-wishes-section {
+    padding: 60px 20px;
+  }
+
+  .wishes-title {
+    font-size: 2.5rem;
+  }
+
+  .wishes-form,
+  .wishes-display {
+    padding: 30px 20px;
+  }
+
+  .wishes-display {
+    max-height: 350px;
+  }
+
+  .nav-button {
+    width: 32px;
+    height: 32px;
+    font-size: 14px;
+  }
+
+  .nav-button.prev {
+    left: 5px;
+  }
+
+  .nav-button.next {
+    right: 5px;
+  }
+
+  .swipe-indicators {
+    justify-content: center;
+    gap: 15px;
+  }
+}

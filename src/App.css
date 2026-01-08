@@ -1,0 +1,2086 @@
+/* Import Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@300;400;500;600;700&family=Gilda+Display&family=Poppins:wght@300;400;500;600;700&display=swap");
+
+/* Reset and Base Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background-color: #f9f6ef;
+  overflow-x: hidden;
+}
+
+/* Disable text selection and image dragging */
+img {
+  pointer-events: none;
+  user-select: none;
+  -webkit-user-drag: none;
+  -khtml-user-drag: none;
+  -moz-user-drag: none;
+  -o-user-drag: none;
+}
+
+input,
+textarea,
+button,
+select,
+a {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  outline: none;
+}
+
+a:focus,
+a:visited,
+a:active {
+  outline: none;
+}
+
+/* Hero Section */
+.hero {
+  min-height: 100vh;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: url("https://tibra-invitation.id/wp-content/uploads/2024/10/ASSET-GOLD-WHITE-13.webp")
+    center/cover;
+}
+
+.main-layout {
+  display: flex;
+  min-height: 100vh;
+}
+
+.right {
+  width: 25%;
+  height: 100vh;
+  overflow-y: auto;
+  scroll-behavior: smooth;
+}
+
+.left {
+  width: 75%;
+  background-image: url("/Background.JPG");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+@media (max-width: 768px) {
+  .left {
+    display: none;
+  }
+
+  .right {
+    width: 100%;
+  }
+}
+
+.hero-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* background-color: rgba(249, 246, 239, 0.95); */
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  height: 80vh;
+  width: 20vw;
+  margin: 0 auto;
+  border-radius: 150px;
+  background-color: #f9f6ef;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  border-radius: 3;
+  box-shadow: 30px 30px 30px rgba(0, 0, 0, 0.3);
+}
+
+@media (max-width: 768px) {
+  .hero-content {
+    width: 80vw;
+    height: 90vh;
+    padding: 6rem 1.5rem;
+    border-radius: 150px;
+    box-shadow: 30px 30px 30px rgba(0, 0, 0, 0.3);
+  }
+}
+
+.hero-initials {
+  width: 200px;
+  height: 200px;
+  background: url("https://tibra-invitation.id/wp-content/uploads/2024/10/ASSET-GOLD-WHITE-17.webp")
+    center/cover;
+  font-family: "Gilda Display", serif;
+  font-size: 3rem;
+  color: #ac8711;
+  margin-bottom: 1rem;
+  line-height: 1;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-title {
+  font-family: "Crimson Pro", serif;
+  font-size: 1rem;
+  font-weight: 300;
+  color: #333;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+}
+
+.hero-couple-name {
+  font-family: "Gilda Display", serif;
+  font-size: 2rem;
+  color: #ac8711;
+  margin-bottom: 1rem;
+  font-weight: 400;
+}
+
+.hero-divider {
+  width: 80px;
+  height: 1px;
+  background: linear-gradient(to right, transparent, #ac8711, transparent);
+  margin: 1.5rem auto;
+}
+
+.hero-greeting {
+  font-family: "Crimson Pro", serif;
+  font-size: 1rem;
+  color: #666;
+  margin-bottom: 0.5rem;
+}
+
+.hero-guest-name {
+  font-family: "Gilda Display", serif;
+  font-size: 1.2rem;
+  color: #333;
+  margin-bottom: 2rem;
+  font-weight: 400;
+}
+
+.hero-open-btn {
+  background-color: #000;
+  color: #fff;
+  border: none;
+  padding: 0.8rem 2rem;
+  font-family: "Poppins", sans-serif;
+  font-size: 0.9rem;
+  border-radius: 200px;
+  cursor: pointer;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.hero-open-btn:hover {
+  background-color: #ac8711;
+  transform: scale(1.05);
+}
+
+/* Introduction Section */
+.intro-section {
+  min-height: 100vh;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.video-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+}
+
+.video-background video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.intro-over-bg {
+  background: url("https://tibra-invitation.id/wp-content/uploads/2024/10/ASSET-GOLD-WHITE-13.webp")
+    center/cover;
+}
+
+.intro-overlay {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  color: #141414;
+  padding: 2rem;
+}
+
+.intro-title {
+  font-family: "Poppins", sans-serif;
+  font-size: 1rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  margin-bottom: 1rem;
+}
+
+.intro-couple-name {
+  font-family: "Gilda Display", serif;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.intro-and {
+  font-family: "MonthGlade", sans-serif;
+  font-size: 2rem;
+  font-weight: bold;
+  margin: 1rem 0;
+}
+
+.intro-date {
+  font-family: sans-serif;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+/* Love Section */
+.love-section {
+  min-height: 100vh;
+  background-color: #f9f6ef;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.love-content {
+  background: url("https://tibra-invitation.id/wp-content/uploads/2024/10/ASSET-GOLD-WHITE-1.webp")
+    center/cover;
+  text-align: center;
+  padding: 2rem;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  width: 100%;
+  max-width: 400px;
+  min-height: 90vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.love-frame {
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 2rem;
+}
+
+.love-content h2 {
+  font-family: "Manstein", serif;
+  font-size: 2.5rem;
+  color: #ac8711;
+  margin-bottom: 2rem;
+}
+
+.love-content h3 {
+  font-family: "Manstein", serif;
+  font-size: 1.5rem;
+  color: #ac8711;
+  margin-bottom: 0.5rem;
+  font-weight: lighter;
+  margin-top: 1rem;
+}
+
+.love-content blockquote {
+  font-family: "Crimson Pro", serif;
+  font-size: 1.1rem;
+  line-height: 1.8;
+  font-style: italic;
+  color: #555;
+}
+
+/* Divider Section */
+.divider-section {
+  background-color: #f9f6ef;
+}
+
+.divider-image {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Couple Section */
+.couple-section {
+  padding: 6rem 2rem;
+  background: url("https://tibra-invitation.id/wp-content/uploads/2024/10/ASSET-GOLD-WHITE-8-Rev.webp")
+    center/cover;
+  position: relative;
+}
+
+/* Desktop layout for couple section */
+@media (min-width: 769px) {
+  .couple-content {
+    flex-direction: row;
+    gap: 4rem;
+    align-items: stretch;
+  }
+
+  .couple-card {
+    flex: 1;
+  }
+
+  .couple-divider {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-self: center;
+  }
+}
+
+.couple-section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  /* background: url('https://tibra-invitation.id/wp-content/uploads/2024/10/ASSET-GOLD-WHITE-1.webp') center/cover; */
+  opacity: 0.9;
+}
+
+.couple-content {
+  position: relative;
+  z-index: 2;
+  max-width: 1000px;
+  margin: 0 auto;
+  display: flex;
+  justify-items: center;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.couple-card {
+  text-align: center;
+  padding: 1rem;
+  /* background: rgba(249, 246, 239, 0.9); */
+  /* border-radius: 8px; */
+  /* box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3); */
+  width: 100%;
+  max-width: 400px;
+  min-height: 550px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.couple-card h2 {
+  font-family: "Gilda Display", serif;
+  font-size: 2rem;
+  color: rgba(0, 0, 0, 0.5);
+  margin-bottom: 2rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+.couple-photo {
+  width: 250px;
+  height: 350px;
+  object-fit: cover;
+  border-radius: 200px;
+  padding: 0.2rem;
+  background-color: white;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  object-position: center 10%;
+}
+
+.couple-name {
+  font-family: "Manstein", serif;
+  font-size: 4rem;
+  color: #ac8711;
+  margin-bottom: 1rem;
+  font-weight: 400;
+}
+
+.couple-full-name {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.1rem;
+  color: black;
+  margin-bottom: 1rem;
+}
+
+.couple-parents {
+  font-family: "Crimson Pro", serif;
+  font-size: 1rem;
+  color: #666;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+}
+
+.social-link {
+  display: inline-block;
+  color: #ac8711;
+  font-size: 1.5rem;
+  transition: transform 0.3s ease;
+}
+
+.social-link:hover {
+  transform: scale(1.2);
+}
+
+.couple-divider {
+  font-family: "Manstein", serif;
+  font-size: 5rem;
+  color: #ac8711;
+}
+
+/* Event Section */
+.event-section {
+  background-color: #ede6d5;
+  position: relative;
+  padding: 6rem 2rem;
+}
+
+.event-section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url("https://tibra-invitation.id/wp-content/uploads/2024/10/ASSET-GOLD-WHITE-9-Rev.webp")
+    center/cover;
+  opacity: 0.3;
+}
+
+.event-content {
+  position: relative;
+  z-index: 2;
+  max-width: 1200px;
+  margin: 1rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.event-header,
+.event-footer {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.event-header-decoration,
+.event-footer-decoration {
+  width: 100%;
+  max-width: 800px;
+  height: auto;
+}
+
+.event-background {
+  background: rgba(255, 255, 255, 1);
+  border-radius: 200px;
+  box-shadow: 30px 30px 30px rgba(0, 0, 0, 0.3);
+}
+
+.events-grid {
+  /* display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); */
+  background: rgba(255, 255, 255, 1);
+  /* gap: 3rem; */
+  border-radius: 200px;
+  border: 2px solid #ac8711;
+}
+
+.event-card {
+  text-align: center;
+  padding: 3rem;
+  padding-bottom: 4rem;
+  border-radius: 8px;
+}
+
+.event-title {
+  font-family: "Gilda Display", serif;
+  font-size: 1.8rem;
+  color: #ac8711;
+  margin-bottom: 1rem;
+}
+
+.event-date,
+.event-time {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.1rem;
+  color: #555;
+  margin-bottom: 1rem;
+}
+
+.event-divider {
+  width: 60px;
+  height: 60px;
+  background: #ac8711;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 2rem auto;
+  color: #fff;
+  font-size: 1.2rem;
+}
+
+.event-location {
+  font-family: "Poppins", sans-serif;
+  font-size: 1rem;
+  color: #333;
+  margin-bottom: 2rem;
+  line-height: 1.6;
+}
+
+.event-address {
+  font-weight: 300;
+  color: #666;
+}
+
+.maps-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background-color: #ac8711;
+  color: #fff;
+  text-decoration: none;
+  padding: 0.6rem 2rem;
+  border-radius: 200px;
+  font-family: "Poppins", sans-serif;
+  font-size: 0.9rem;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.maps-button:hover {
+  background-color: #000;
+  transform: scale(1.05);
+}
+
+/* Countdown Section */
+.countdown-decoration {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.countdown-section {
+  width: 90%;
+  padding: 6rem 2rem;
+  position: relative;
+  background: url("https://tibra-invitation.id/wp-content/uploads/2024/10/ASSET-GOLD-WHITE-16-2.webp");
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: contain;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.countdown-section::before {
+  content: "";
+  position: absolute;
+
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+
+  background: url("https://tibra-invitation.id/wp-content/uploads/2024/10/ASSET-GOLD-WHITE-16.webp");
+  background-repeat: no-repeat;
+  background-position: bottom center;
+  background-size: contain;
+}
+
+.countdown {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.countdown-title {
+  font-family: "Gilda Display", serif;
+  font-size: 1rem;
+  color: #ac8711;
+}
+
+.countdown-items {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(30px, 1fr));
+  gap: 2rem;
+}
+
+.countdown-item {
+  text-align: center;
+}
+
+.countdown-value {
+  font-family: "Gilda Display", serif;
+  font-size: 3rem;
+  font-weight: bold;
+  color: #ac8711;
+  margin-bottom: 0.5rem;
+}
+
+.countdown-label {
+  font-family: "Poppins", sans-serif;
+  font-size: 0.9rem;
+  color: #666;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+/* Live Streaming Section */
+.live-streaming-section {
+  padding: 80px 20px;
+  background: linear-gradient(135deg, #f8f4f0 0%, #ede6d5 100%);
+  text-align: center;
+}
+
+.streaming-container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.streaming-title {
+  font-family: "Manstein", serif;
+  font-size: 3rem;
+  color: #8b7355;
+  margin-bottom: 1rem;
+  font-weight: 300;
+}
+
+.streaming-subtitle {
+  font-family: "Crimson Pro";
+  font-size: 1.1rem;
+  color: #6b5d54;
+  margin-bottom: 3rem;
+  line-height: 1.6;
+}
+
+.streaming-content {
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 20px;
+  padding: 40px;
+  box-shadow: 0 10px 40px rgba(139, 115, 85, 0.1);
+}
+
+.streaming-links {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.streaming-card {
+  background: linear-gradient(135deg, #ffffff 0%, #f8f4f0 100%);
+  border: 1px solid #e8dcc6;
+  border-radius: 15px;
+  padding: 25px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.streaming-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(139, 115, 85, 0.15);
+}
+
+.streaming-card h3 {
+  font-family: "Crimson Pro";
+  font-size: 1.5rem;
+  color: #8b7355;
+  margin-bottom: 10px;
+}
+
+.streaming-description {
+  font-family: "Crimson Pro";
+  color: #6b5d54;
+  margin-bottom: 20px;
+  line-height: 1.6;
+}
+
+.streaming-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: linear-gradient(135deg, #ff0000 0%, #cc0000 100%);
+  color: #fff;
+  text-decoration: none;
+  padding: 12px 24px;
+  border-radius: 25px;
+  font-family: "Crimson Pro";
+  font-size: 1rem;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(255, 0, 0, 0.2);
+}
+
+.streaming-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(255, 0, 0, 0.3);
+}
+
+@media (max-width: 768px) {
+  .live-streaming-section {
+    padding: 60px 20px;
+  }
+
+  .streaming-title {
+    font-size: 2.5rem;
+  }
+
+  .streaming-content {
+    padding: 30px 20px;
+  }
+
+  .streaming-links {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Invitation Section */
+.invitation-section {
+  padding: 6rem 2rem;
+  background: url("https://tibra-invitation.id/wp-content/uploads/2024/10/ASSET-GOLD-WHITE-1.webp")
+    center/cover;
+  position: relative;
+}
+
+.invitation-content {
+  background: rgba(249, 246, 239, 0.95);
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  padding: 3rem;
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.invitation-title {
+  font-family: "Manstein", serif;
+  font-size: 2.5rem;
+  color: #ac8711;
+  margin-bottom: 2rem;
+  font-weight: lighter;
+}
+
+.invitation-details {
+  text-align: left;
+}
+
+.family-section {
+  font-family: "Crimson Pro", serif;
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #555;
+  margin-bottom: 2rem;
+}
+
+.family-section p {
+  margin: 0.5rem 0;
+}
+
+.also-inviting {
+  font-family: "Manstein", serif;
+  font-size: 1.8rem;
+  color: #ac8711;
+  margin-bottom: 1rem;
+  text-align: center;
+  font-weight: lighter;
+}
+
+.also-inviting-list {
+  font-family: "Crimson Pro", serif;
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #555;
+  text-align: left;
+}
+
+.also-inviting-list p {
+  margin: 0.5rem 0;
+}
+
+/* YouTube Section */
+.youtube-section {
+  padding: 6rem 2rem;
+  background-color: #ede6d5;
+}
+
+.youtube-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.youtube-title {
+  font-family: "Manstein", serif;
+  font-size: 2.5rem;
+  color: #ac8711;
+  margin-bottom: 3rem;
+}
+
+.youtube-video-container {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+.youtube-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+  border-radius: 15px;
+}
+
+/* Gallery Section */
+.gallery-section {
+  padding: 6rem 2rem;
+  background-color: #f9f6ef;
+}
+
+.gallery-content {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.gallery-title {
+  font-family: "Manstein", serif;
+  font-size: 2.5rem;
+  color: #ac8711;
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+}
+
+.gallery-item {
+  position: relative;
+  aspect-ratio: 2/3;
+  overflow: hidden;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.gallery-item:hover {
+  transform: scale(1.05);
+}
+
+.gallery-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.gallery-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.3);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.gallery-item:hover .gallery-overlay {
+  opacity: 1;
+}
+
+.lightbox {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.95);
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  padding: 1rem;
+}
+
+.lightbox img {
+  max-width: 90%;
+  max-height: 90vh;
+  object-fit: contain;
+  border-radius: 8px;
+  cursor: default;
+}
+
+.lightbox-nav {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  color: #fff;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  backdrop-filter: blur(10px);
+}
+
+.lightbox-nav:hover {
+  background: rgba(255, 255, 255, 0.2);
+  transform: translateY(-50%) scale(1.1);
+}
+
+.lightbox-prev {
+  left: 20px;
+}
+
+.lightbox-next {
+  right: 20px;
+}
+
+.lightbox-close {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  color: #fff;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  backdrop-filter: blur(10px);
+}
+
+.lightbox-close:hover {
+  background: rgba(255, 255, 255, 0.2);
+  transform: scale(1.1);
+}
+
+.lightbox-counter {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  font-family: "Poppins", sans-serif;
+  font-size: 0.9rem;
+  backdrop-filter: blur(10px);
+}
+
+/* Our Story Section */
+.our-story-section {
+  padding: 6rem 2rem;
+  background-color: #f9f6ef;
+}
+
+.our-story-content {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.our-story-title {
+  font-family: "Manstein", serif;
+  font-size: 2.5rem;
+  color: #ac8711;
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.story-card {
+  flex-direction: column;
+  display: flex;
+  align-items: flex-start;
+  gap: 3rem;
+  background: rgba(255, 255, 255, 0.95);
+  border-radius: 20px;
+  padding: 3rem;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  border: 2px solid rgba(172, 135, 17, 0.1);
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.story-image-container {
+  display: flex;
+  width: 100%;
+  justify-items: center;
+  justify-content: center;
+  height: 350px;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+.story-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.story-content-wrapper {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.story-section {
+  margin-bottom: 2rem;
+}
+
+.story-section:last-child {
+  margin-bottom: 0;
+}
+
+.story-title {
+  font-family: "Gilda Display", serif;
+  font-size: 1.5rem;
+  color: #ac8711;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+.story-text {
+  font-family: "Crimson Pro", serif;
+  font-size: 1rem;
+  line-height: 1.7;
+  color: #555;
+  margin: 0;
+}
+
+@media (max-width: 768px) {
+  .our-story-section {
+    padding: 4rem 1.5rem;
+  }
+
+  .our-story-title {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+  }
+
+  .story-card {
+    flex-direction: column;
+    padding: 2rem;
+    gap: 2rem;
+  }
+
+  .story-image-container {
+    width: 100%;
+    height: 280px;
+  }
+
+  .story-content-wrapper {
+    gap: 1.5rem;
+  }
+
+  .story-title {
+    font-size: 1.3rem;
+  }
+
+  .story-text {
+    font-size: 0.95rem;
+  }
+}
+
+/* RSVP Section */
+.rsvp-section {
+  padding: 6rem 2rem;
+  background: url("https://tibra-invitation.id/wp-content/uploads/2024/10/ASSET-GOLD-WHITE-6-scaled.webp")
+    center/cover;
+  position: relative;
+}
+
+/* .rsvp-section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url('https://tibra-invitation.id/wp-content/uploads/2024/10/asset-4.png') center/cover;
+  opacity: 0.9;
+} */
+
+.rsvp-content {
+  position: relative;
+  z-index: 2;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.rsvp-header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.section-title {
+  font-family: "Gilda Display", serif;
+  font-size: 2.5rem;
+  color: #ac8711;
+  margin-bottom: 1rem;
+}
+
+.rsvp-description {
+  font-family: "Crimson Pro", serif;
+  font-size: 1.1rem;
+  color: #555;
+  line-height: 1.8;
+}
+
+.rsvp-form {
+  background: rgba(249, 246, 239, 0.95);
+  padding: 3rem;
+  border-radius: 8px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+  margin-bottom: 2rem;
+  text-align: left;
+}
+
+.form-label {
+  display: block;
+  font-family: "Poppins", sans-serif;
+  font-size: 0.9rem;
+  color: #333;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+}
+
+.form-input,
+.form-select {
+  width: 100%;
+  padding: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-family: "Poppins", sans-serif;
+  font-size: 0.9rem;
+  background: #fff;
+  transition: border-color 0.3s ease;
+}
+
+.form-input:focus,
+.form-select:focus {
+  border-color: #ac8711;
+}
+
+.submit-button {
+  width: 100%;
+  background-color: #ac8711;
+  color: #fff;
+  border: none;
+  padding: 1rem 2rem;
+  font-family: "Poppins", sans-serif;
+  font-size: 0.9rem;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.submit-button:hover {
+  background-color: #000;
+  transform: scale(1.02);
+}
+
+.rsvp-success {
+  text-align: center;
+  padding: 3rem;
+  background: rgba(249, 246, 239, 0.95);
+  border-radius: 8px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.rsvp-success i {
+  font-size: 4rem;
+  color: #ac8711;
+  margin-bottom: 1rem;
+}
+
+.rsvp-success h3 {
+  font-family: "Gilda Display", serif;
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 1rem;
+}
+
+.rsvp-success p {
+  font-family: "Crimson Pro", serif;
+  font-size: 1.1rem;
+  color: #555;
+  line-height: 1.8;
+}
+
+.rsvp-decoration {
+  text-align: center;
+  margin-top: 3rem;
+}
+
+.rsvp-decoration img {
+  width: 100%;
+  max-width: 600px;
+  height: auto;
+}
+
+/* Footer */
+.footer {
+  background-color: #403a30;
+  color: #fff;
+  padding: 3rem 2rem 2rem;
+  text-align: center;
+}
+
+.footer-content {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.audio-player {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 999;
+}
+
+.audio-control {
+  width: 50px;
+  height: 50px;
+  background: rgba(172, 135, 17, 0.9);
+  border-radius: 50%;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+  transition: background-color 0.3s ease;
+}
+
+.audio-control:hover {
+  background: rgba(0, 0, 0, 0.8);
+}
+
+.footer-text p {
+  font-family: "Poppins", sans-serif;
+  font-size: 0.9rem;
+  margin-bottom: 1rem;
+}
+
+.social-links {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.social-links a {
+  color: #fff;
+  font-size: 1.2rem;
+  transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+  color: #ac8711;
+}
+
+/* Base Mobile Improvements */
+html {
+  font-size: 16px;
+}
+
+body {
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+}
+
+/* Tablets - 768px and below */
+@media (max-width: 768px) {
+  .hero {
+    min-height: 100vh;
+    padding: 1rem;
+  }
+
+  .hero-content {
+    margin: 1rem;
+    padding: 2rem 1.5rem;
+    max-width: 90%;
+  }
+
+  .hero-initials {
+    font-size: 2.8rem;
+    line-height: 1.1;
+  }
+
+  .hero-title {
+    font-size: 1rem;
+    letter-spacing: 0.15em;
+  }
+
+  .hero-couple-name {
+    font-size: 1.8rem;
+  }
+
+  .hero-greeting {
+    font-size: 1rem;
+  }
+
+  .hero-guest-name {
+    font-size: 1.3rem;
+  }
+
+  .hero-open-btn {
+    padding: 0.8rem 1.5rem;
+    font-size: 0.85rem;
+  }
+
+  /* Introduction Section */
+  .intro-overlay {
+    padding: 2rem 1rem;
+  }
+
+  .intro-title {
+    font-size: 1.2rem;
+    letter-spacing: 0.15em;
+  }
+
+  .intro-couple-name {
+    font-size: 2.5rem;
+  }
+
+  .intro-and {
+    font-size: 1.3rem;
+  }
+
+  .intro-date {
+    font-size: 1rem;
+  }
+
+  /* Love Section */
+  .love-section {
+    padding: 4rem 1.5rem;
+  }
+
+  .love-content {
+    padding: 2rem 1.5rem;
+  }
+
+  .love-frame {
+    width: 250px;
+    height: 250px;
+    margin-bottom: 1.5rem;
+  }
+
+  .love-content h2 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .love-content blockquote {
+    font-size: 1rem;
+  }
+
+  /* Couple Section */
+  .couple-section {
+    padding: 4rem 1.5rem;
+  }
+
+  .couple-content {
+    flex-direction: column;
+    gap: 1rem;
+    text-align: center;
+  }
+
+  .couple-card {
+    max-width: 350px;
+    min-height: 500px;
+  }
+
+  .couple-divider {
+    font-size: 3rem;
+  }
+
+  .section-title {
+    font-size: 1.5rem;
+  }
+
+  .couple-photo {
+    width: 220px;
+    height: 300px;
+    margin-bottom: 1.5rem;
+  }
+
+  .couple-name {
+    font-size: 3rem;
+  }
+
+  .couple-full-name {
+    font-size: 1rem;
+  }
+
+  .couple-parents {
+    font-size: 0.9rem;
+  }
+
+  /* Event Section */
+  .event-section {
+    padding: 4rem 1.5rem;
+  }
+
+  .events-grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .event-card {
+    padding: 2rem;
+    padding-bottom: 3rem;
+  }
+
+  .event-title {
+    font-size: 1.5rem;
+  }
+
+  .event-date,
+  .event-time {
+    font-size: 1rem;
+  }
+
+  /* Countdown Section */
+  .countdown-section {
+    padding: 4rem 1.5rem;
+  }
+
+  .countdown-title {
+    font-size: 1rem;
+  }
+
+  .countdown-items {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    max-width: 400px;
+    margin: 0 auto;
+  }
+
+  .countdown {
+    padding: 2rem;
+  }
+
+  .countdown-value {
+    font-size: 2.5rem;
+  }
+
+  .countdown-label {
+    font-size: 0.8rem;
+  }
+
+  /* Gallery Section */
+  .gallery-section {
+    padding: 4rem 1.5rem;
+  }
+
+  .gallery-title {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+  }
+
+  .gallery-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
+
+  /* RSVP Section */
+  .rsvp-section {
+    padding: 4rem 1.5rem;
+  }
+
+  .rsvp-content {
+    max-width: 100%;
+  }
+
+  .section-title {
+    font-size: 2rem;
+  }
+
+  .rsvp-description {
+    font-size: 1rem;
+  }
+
+  .rsvp-form {
+    padding: 2rem 1.5rem;
+  }
+
+  .form-group {
+    margin-bottom: 1.5rem;
+  }
+
+  .form-label {
+    font-size: 0.9rem;
+  }
+
+  .form-input,
+  .form-select {
+    padding: 0.8rem;
+    font-size: 0.9rem;
+  }
+
+  .submit-button {
+    padding: 0.8rem 1.5rem;
+    font-size: 0.9rem;
+  }
+
+  .rsvp-success {
+    padding: 2rem 1.5rem;
+  }
+
+  .rsvp-decoration img {
+    max-width: 100%;
+  }
+
+  /* Footer */
+  .footer {
+    padding: 2rem 1rem 1rem;
+  }
+
+  .audio-player {
+    bottom: 15px;
+    right: 15px;
+  }
+
+  .audio-control {
+    width: 45px;
+    height: 45px;
+    font-size: 1rem;
+  }
+
+  .footer-text p {
+    font-size: 0.85rem;
+  }
+
+  .social-links a {
+    font-size: 1rem;
+  }
+}
+
+/* Mobile Phones - 480px and below */
+@media (max-width: 480px) {
+  html {
+    font-size: 14px;
+  }
+
+  /* Hero Section - Small Mobile */
+  .hero-content {
+    margin: 0.5rem;
+    padding: 1.5rem 1rem;
+  }
+
+  .hero-initials {
+    font-size: 2.2rem;
+  }
+
+  .hero-title {
+    font-size: 0.9rem;
+  }
+
+  .hero-couple-name {
+    font-size: 1.5rem;
+  }
+
+  .hero-greeting {
+    font-size: 0.9rem;
+  }
+
+  .hero-guest-name {
+    font-size: 1.1rem;
+  }
+
+  .hero-open-btn {
+    padding: 0.7rem 1.2rem;
+    font-size: 0.8rem;
+  }
+
+  /* Introduction */
+  .intro-overlay {
+    padding: 1.5rem 0.5rem;
+  }
+
+  .intro-title {
+    font-size: 1rem;
+  }
+
+  .intro-couple-name {
+    font-size: 2rem;
+  }
+
+  .intro-and {
+    font-size: 1.1rem;
+  }
+
+  .intro-date {
+    font-size: 0.9rem;
+  }
+
+  /* Love Section */
+  .love-section {
+    padding: 3rem 1rem;
+  }
+
+  .love-content {
+    padding: 1.5rem 1rem;
+  }
+
+  .love-frame {
+    width: 200px;
+    height: 200px;
+  }
+
+  .love-content h2 {
+    font-size: 1.5rem;
+  }
+
+  .love-content blockquote {
+    font-size: 0.9rem;
+    line-height: 1.6;
+  }
+
+  /* Couple Section */
+  .couple-section {
+    padding: 3rem 1rem;
+  }
+
+  .section-title {
+    font-size: 1.2rem;
+  }
+
+  .couple-photo {
+    width: 180px;
+    height: 250px;
+  }
+
+  .couple-name {
+    font-size: 2rem;
+  }
+
+  .couple-full-name {
+    font-size: 0.9rem;
+  }
+
+  .couple-parents {
+    font-size: 0.8rem;
+  }
+
+  /* Event Section */
+  .event-section {
+    padding: 3rem 1rem;
+  }
+
+  .event-card {
+    padding: 1.5rem;
+    padding-bottom: 2.5rem;
+  }
+
+  .event-title {
+    font-size: 1.3rem;
+  }
+
+  .event-date,
+  .event-time {
+    font-size: 0.9rem;
+  }
+
+  .event-location {
+    font-size: 0.9rem;
+  }
+
+  .maps-button {
+    padding: 0.8rem 1.5rem;
+    font-size: 0.8rem;
+  }
+
+  /* Countdown */
+  .countdown-section {
+    padding: 3rem 1rem;
+  }
+
+  .countdown-title {
+    font-size: 1rem;
+  }
+
+  .countdown-items {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
+
+  .countdown-value {
+    font-size: 2rem;
+  }
+
+  .countdown-label {
+    font-size: 0.75rem;
+  }
+
+  .countdown {
+    padding: 2rem;
+  }
+
+  /* Gallery */
+  .gallery-section {
+    padding: 3rem 1rem;
+  }
+
+  .gallery-title {
+    font-size: 1.5rem;
+  }
+
+  .gallery-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.8rem;
+  }
+
+  /* RSVP */
+  .rsvp-section {
+    padding: 3rem 1rem;
+  }
+
+  .rsvp-description {
+    font-size: 0.9rem;
+    line-height: 1.6;
+  }
+
+  .rsvp-form {
+    padding: 1.5rem 1rem;
+  }
+
+  .form-group {
+    margin-bottom: 1rem;
+  }
+
+  .form-label {
+    font-size: 0.85rem;
+    margin-bottom: 0.4rem;
+  }
+
+  .form-input,
+  .form-select {
+    padding: 0.7rem;
+    font-size: 0.85rem;
+  }
+
+  .submit-button {
+    padding: 0.7rem 1.2rem;
+    font-size: 0.85rem;
+  }
+
+  .rsvp-success {
+    padding: 1.5rem 1rem;
+  }
+
+  .rsvp-success i {
+    font-size: 3rem;
+  }
+
+  .rsvp-success h3 {
+    font-size: 1.5rem;
+  }
+
+  .rsvp-success p {
+    font-size: 0.9rem;
+  }
+
+  /* Footer */
+  .footer {
+    padding: 1.5rem 0.5rem 0.5rem;
+  }
+
+  .audio-player {
+    bottom: 10px;
+    right: 10px;
+  }
+
+  .audio-control {
+    width: 40px;
+    height: 40px;
+    font-size: 0.9rem;
+  }
+
+  .footer-text p {
+    font-size: 0.8rem;
+    margin-bottom: 0.8rem;
+  }
+
+  .social-links {
+    gap: 0.8rem;
+    margin-bottom: 0.8rem;
+  }
+
+  .social-links a {
+    font-size: 0.9rem;
+  }
+
+  /* Mobile Lightbox */
+  .lightbox-nav {
+    width: 40px;
+    height: 40px;
+  }
+
+  .lightbox-prev {
+    left: 10px;
+  }
+
+  .lightbox-next {
+    right: 10px;
+  }
+
+  .lightbox-close {
+    width: 35px;
+    height: 35px;
+    top: 10px;
+    right: 10px;
+  }
+
+  .lightbox-counter {
+    bottom: 10px;
+    padding: 0.4rem 0.8rem;
+    font-size: 0.8rem;
+  }
+}
+
+/* Very Small Mobile - 360px and below */
+@media (max-width: 360px) {
+  .hero-content {
+    padding: 1rem 0.8rem;
+  }
+
+  .hero-initials {
+    font-size: 2rem;
+  }
+
+  .hero-couple-name {
+    font-size: 1.3rem;
+  }
+
+  .intro-couple-name {
+    font-size: 1.8rem;
+  }
+
+  .love-frame {
+    width: 180px;
+    height: 180px;
+  }
+
+  .couple-photo {
+    width: 160px;
+    height: 220px;
+  }
+
+  .countdown-items {
+    max-width: 220px;
+  }
+
+  .countdown-value {
+    font-size: 1.8rem;
+  }
+
+  .event-card {
+    padding: 1rem;
+    padding-bottom: 2rem;
+  }
+
+  .rsvp-form {
+    padding: 1rem 0.8rem;
+  }
+}
+
+/* Mobile Landscape Fix */
+@media (max-height: 600px) and (orientation: landscape) {
+  .hero {
+    min-height: 100vh;
+  }
+
+  .intro-section {
+    min-height: 100vh;
+  }
+
+  .intro-overlay {
+    padding: 1rem;
+  }
+
+  .intro-couple-name {
+    font-size: 2rem;
+  }
+
+  .countdown-items {
+    grid-template-columns: repeat(4, 1fr);
+    max-width: none;
+  }
+
+  .couple-photo {
+    width: 200px;
+    height: 280px;
+  }
+
+  .love-frame {
+    width: 200px;
+    height: 200px;
+  }
+}
+
+/* iPhone SE and similar small phones */
+@media (max-width: 375px) {
+  .hero-guest-name {
+    font-size: 1rem;
+  }
+
+  .couple-parents {
+    font-size: 0.75rem;
+    line-height: 1.4;
+  }
+
+  .love-content blockquote {
+    font-size: 0.85rem;
+  }
+}
+
+/* Mobile Performance Optimization */
+@media (max-width: 768px) {
+  /* Reduce animation complexity for mobile */
+  .hero-content,
+  .couple-card,
+  .event-card,
+  .countdown-item {
+    transform: translateZ(0);
+    will-change: transform, opacity;
+  }
+
+  /* Optimize images for mobile */
+  .gallery-item img,
+  .couple-photo,
+  .love-frame {
+    image-rendering: -webkit-optimize-contrast;
+  }
+}
+
+/* Animation Classes */
+.main-content {
+  overflow-x: hidden;
+}
+
+/* Mobile Touch Optimizations */
+* {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Allow text selection for specific elements */
+.form-input,
+.form-select,
+.rsvp-description,
+.couple-parents,
+.love-content blockquote {
+  -webkit-touch-callout: text;
+  -webkit-user-select: text;
+  -khtml-user-select: text;
+  -moz-user-select: text;
+  -ms-user-select: text;
+  user-select: text;
+}
+
+/* Smooth scrolling for mobile */
+html {
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
+}
+
+/* Mobile viewport fix */
+body {
+  overflow-x: hidden;
+  position: relative;
+  width: 100%;
+}
+
+/* Hide scrollbars on mobile for cleaner look */
+::-webkit-scrollbar {
+  display: none;
+}
+
+html {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+
+/* Scrollbar Styling */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #ac8711;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #000;
+}
