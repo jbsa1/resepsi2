@@ -24,34 +24,42 @@ const InvitationSection: React.FC = () => {
         >
           <div className="family-section">
             <li>
-            <p>Family of Mr. Abubakar (Arbin) bin Jafar Bin Syekh Abubakar</p>
-            <p>Mrs. Dina Sukainah binti Muhammad Bin Syekh Abubakar</p>
-
+              <p>Family of Mr. Abubakar (Arbin) bin Jafar Bin Syekh Abubakar</p>
+              <p>Mrs. Dina Sukainah binti Muhammad Bin Syekh Abubakar</p>
             </li>
-<li>
-
-            <p>Family of Mr. drg. Tomi Abubakar Alwi bin Mohammad Bin Syekh Abubakar, MPH,.CGRCP.</p>
-            <p>Mrs. Mylantha Kamarullah binti Syarief Muhammad Alhabsyi</p>
-</li>
+            <li>
+              <p>
+                Family of Mr. Tomi Abubakar Alwi bin Mohammad Bin Syekh Abubakar
+              </p>
+              <p>Mrs. Mylantha Kamarullah binti Syarief Muhammad Alhabsyi</p>
+            </li>
           </div>
 
           <h3 className="also-inviting">Inviting:</h3>
           <div className="also-inviting-list">
             <li>
-
-            <p>The Extended Family of the Late Habib Jafar bin Husen bin Sheikh Abubakar</p>
+              <p>
+                The Extended Family of the Late Habib Jafar bin Husen bin Sheikh
+                Abubakar
+              </p>
             </li>
             <li>
-            <p>The Extended Family of the Late Habib Muhammad bin Mohsin bin Sheikh Abubakar</p>
-
+              <p>
+                The Extended Family of the Late Habib Muhammad bin Mohsin bin
+                Sheikh Abubakar
+              </p>
             </li>
             <li>
-
-            <p>The Extended Family of the Late Habib J.E. Mohammad Alwi bin Abubakar bin Sheikh Abubakar</p>
+              <p>
+                The Extended Family of the Late Habib J.E. Mohammad Alwi bin
+                Abubakar bin Sheikh Abubakar
+              </p>
             </li>
             <li>
-
-            <p>The Extended Family of the Late Habib Ahmad Kamarullah bin Syarief Muhammad Alhabsyi</p>
+              <p>
+                The Extended Family of the Late Habib Ahmad Kamarullah bin
+                Syarief Muhammad Alhabsyi
+              </p>
             </li>
           </div>
         </motion.div>
